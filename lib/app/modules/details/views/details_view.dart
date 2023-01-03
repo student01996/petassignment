@@ -35,7 +35,8 @@ class DetailsView extends GetView<DetailsController> {
                 },
                 child: Container(
                   width: Get.width,
-                  child: CachedNetworkImage(imageUrl: controller.pet!.image),
+                  child: CachedNetworkImage(imageUrl: controller.pet!.image,
+                  height: 400),
                 ),
               ),
               SizedBox(height: 10),
